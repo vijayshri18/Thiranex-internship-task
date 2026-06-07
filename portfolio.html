@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Vijayshri Jounjal, MCA Student and Web Developer">
+    <meta name="keywords" content="Portfolio, MCA, Web Developer, Python, Django">
+    <meta name="author" content="Vijayshri Jounjal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vijayshri Jounjal | Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            line-height:1.6;
+            background:#f4f7fc;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        header h1{
+            margin-bottom:10px;
+        }
+
+        nav ul{
+            list-style:none;
+        }
+
+        nav ul li{
+            display:inline-block;
+            margin:0 15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav ul li a:hover{
+            text-decoration:underline;
+        }
+
+        section{
+            max-width:1000px;
+            margin:20px auto;
+            padding:25px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#0d6efd;
+            margin-bottom:15px;
+        }
+
+        .skills-list{
+            display:flex;
+            flex-wrap:wrap;
+            gap:10px;
+        }
+
+        .skill{
+            background:#0d6efd;
+            color:white;
+            padding:8px 15px;
+            border-radius:20px;
+        }
+
+        article{
+            margin-top:15px;
+            padding:15px;
+            background:#f8f9fa;
+            border-left:5px solid #0d6efd;
+            border-radius:5px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        label{
+            margin-top:10px;
+            font-weight:bold;
+        }
+
+        input, textarea{
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        textarea{
+            min-height:120px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:12px;
+            border:none;
+            background:#0d6efd;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#0b5ed7;
+        }
+
+        footer{
+            background:#212529;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus{
+            outline:3px solid orange;
+        }
+
+        @media(max-width:768px){
+            nav ul li{
+                display:block;
+                margin:10px 0;
+            }
+
+            section{
+                margin:15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vijayshri Jounjal</h1>
+    <p>MCA Student | Web Developer | Python Enthusiast</p>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Vijayshri Jounjal, an MCA student with a strong
+            interest in Web Development, Python Programming, Django,
+            Flask, and Database Management Systems. I enjoy building
+            user-friendly and efficient web applications.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <div class="skills-list">
+            <span class="skill">HTML5</span>
+            <span class="skill">CSS3</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Python</span>
+            <span class="skill">Django</span>
+            <span class="skill">Flask</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article>
+            <h3>Automated Timetable Generator</h3>
+            <p>
+                Developed a web-based timetable generation system using
+                Python, Flask, and MySQL to automate scheduling for
+                students and faculty.
+            </p>
+        </article>
+
+        <article>
+            <h3>Habit Tracker Application</h3>
+            <p>
+                Created a Django-based Habit Tracker with authentication,
+                habit creation, and completion tracking features.
+            </p>
+        </article>
+
+        <article>
+            <h3>Student Record Management System</h3>
+            <p>
+                Designed a database-driven application to manage student
+                information efficiently.
+            </p>
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form aria-label="Contact Form">
+
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                aria-label="Enter your name"
+                required>
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                aria-label="Enter your email address"
+                required>
+
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                name="message"
+                aria-label="Enter your message"
+                required></textarea>
+
+            <button
+                type="submit"
+                aria-label="Send Message">
+                Send Message
+            </button>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Vijayshri Jounjal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
